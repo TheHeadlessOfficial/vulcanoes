@@ -1,0 +1,92 @@
+conky.config = {
+	alignment = 'bottom_left', --top_left, top_right, top_middle, bottom_left, bottom_right, bottom_middle, middle_left, middle_middle, middle_right, or none (also can be abreviated as tl, tr, tm, bl, br, bm, ml, mm, mr)
+	background = true,
+	border_inner_margin = 5,
+	border_outer_margin = 0,
+	border_width = 0,
+	color0 = 'violet';
+	color1 = 'add8e6',
+	color2 = 'ffe595',
+	color3 = 'orange',
+	color4 = 'red',
+	color5 = '0068c8',
+	color6 = 'green',
+	color7 = 'darkgrey',
+ 	color8 = '1e90ff',--dodgerblue
+	color9 = 'yellow';
+	cpu_avg_samples = 2,
+--default_bar_size = 30 8
+	default_color = 'white',
+--default_graph_size 15 40
+	default_outline_color = '#000000',
+	default_shade_color = '#000000',
+	double_buffer = true,
+	draw_borders = false,
+	draw_graph_borders = false,
+	draw_outline = false,-- amplifies text if yes
+	draw_shades = false,
+	extra_newline = false,
+	font = 'URW Gothic L:size=8',
+--font = 'Roboto:size=10',
+	gap_x = 410,-- l|r (1230 per progetto, 2485 tre schermi, 805 default) 
+	gap_y = 185,-- u|d  (560 per progetto)
+	imlib_cache_size = 0,
+	maximum_width = 700,
+	minimum_size = 260,
+	minimum_height = 200,
+	minimum_width = 500,
+	net_avg_samples = 2,
+	no_buffers = true,
+	out_to_console = false,
+	out_to_stderr = false,
+	override_utf8_locale = true,
+	own_window = true,
+	own_window_argb_visual = true,
+	own_window_argb_value = 200,
+	own_window_class = 'Conky',
+--own_window_class = 'Conky-semi',
+--own_window_colour = '#a6a4a3',
+	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager',
+--own_window_title = '4_Moon Teo Style',
+	own_window_transparent = false,
+--own_window_type = 'desktop',     --normal, desktop, dock, panel or override
+	own_window_type = 'normal',
+	pad_percents = 2,
+	short_units = true,
+	show_graph_range = true,
+	show_graph_scale = true,
+	stippled_borders = 5,
+--text_buffer_size = 2048,
+--total_run_times 0,
+	update_interval = 600,
+	uppercase = false,-- set to yes if you want all text to be in uppercase
+	use_spacer = 'none',
+	use_xft = true,
+	xftalpha = 1.0,
+--xftfont = Zekton:size=9,
+	
+}
+
+conky.text = [[
+${font After Disaster:size=12}${color4}Vulcans ${image ~/.conky/vulcanoes/python_logo.png -p 80,0 -s 15x15}             ${hr 1}$color${color2}${font}${alignc}${color}
+########################################### load script Python
+${execpi 600 python ~/.conky/vulcanoes/vulcanoes.py}${if_existing /tmp/script_done.lock}LOADING...${else}
+########################################### load feeds
+${execpi 600 sed -n '1p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '2p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '3p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '4p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '5p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '6p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '7p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '8p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '9p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '10p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '11p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '12p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '13p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '14p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '15p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${execpi 600 sed -n '16p' $HOME/.conky/vulcanoes/vulcanoesRSS.txt}
+${color4}${hr 1}${endif}
+]];
