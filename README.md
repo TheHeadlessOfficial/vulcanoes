@@ -23,7 +23,7 @@ Run the file `.conkyrc_vulcans` from terminal (the first time you run this conky
 
 ## Screenshot
 
-![](https://github.com/TheHeadlessOfficial/earthquakes/blob/main/.conky/vulcanoes/docs/screenshot.png)<br>
+![](https://github.com/TheHeadlessOfficial/vulcanoes/blob/main/.conky/vulcanoes/docs/screenshot.png)<br>
 
 
 
