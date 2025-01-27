@@ -23,12 +23,9 @@ Run the file `.conkyrc_vulcans` from terminal (the first time you run this conky
 
 ## Screenshot
 
-![](https://github.com/TheHeadlessOfficial/earthquakes/blob/main/.conky/earthquakes/docs/screenshot.png)<br>
+![](https://github.com/TheHeadlessOfficial/earthquakes/blob/main/.conky/vulcanoes/docs/screenshot.png)<br>
 
-The colors for the first column (Mag) are:
-- from 0 to <4:  green
-- from 4 to <6: orange
-- from 6 to max: red
+
 
 <br>
 <br>
