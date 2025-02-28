@@ -1,10 +1,10 @@
-import os
-import feedparser
 # Lock file to tell conky that the script is running
 lock_file = "/tmp/script_eq.lock"
 try:
     # Check for file lock
     open(lock_file, 'w').close()
+    import os
+    import feedparser
     qta = 15
     ################################ get your HOME name automatically
     homepath = os.environ['HOME']
