@@ -1,6 +1,6 @@
 # Conky Vulcanoes
  
-A standalone conky (written in Python) that shows the vulcanoes, using [vulcanodiscovery.com](https://www.volcanodiscovery.com/) website.<br>
+A conky (written in Python) that shows the vulcanoes, using [vulcanodiscovery.com](https://www.volcanodiscovery.com/) website.<br>
 <br>
 <br>
 
