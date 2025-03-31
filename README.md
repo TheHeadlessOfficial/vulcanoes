@@ -6,12 +6,12 @@ A conky (with a script written in Python) that shows the vulcanoes, using [vulca
 
 ## **WIKI**<br>
 
-Download the .zip file, extract the files, copy the file `.conkyrc_vulcans` and the folder `.conky` inside your Linux `home`.<br>
+Download the .zip file, extract the file, copy the file `.conkyrc_vulcans` and the folder `.conky` inside your Linux `home`.<br>
 If your `home` is named *pippo*, copy inside *pippo* so you get: `/home/pippo/.conky` and `/home/pippo/.conkyrc_vulcans`<br>
 Go to /home/YOURHOMENAME/.conky/vulcanoes/font and install the font.<br>
 No modifications to do.
 <br>
-The python script saves data in files so you can build your conky vulcanoes as you wish.<br>
+The python script saves data in file so you can build your conky vulcanoes as you wish.<br>
 The `.conkyrc_vulcans` file i attach, works.<br>
 Run the file `.conkyrc_vulcans` from terminal (the first time you run this conky), so you can get possible errors. 
 
